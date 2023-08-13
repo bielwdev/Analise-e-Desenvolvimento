@@ -15,3 +15,19 @@ if(idade < 16){
 }else{
     console.log("Voto obrigatório")
 }
+
+var diaSem = 4;
+
+switch(diaSem){
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda-feira");
+        break;
+    case 3:
+        console.log("Terça-feira");
+        break;
+    default:
+        console.log("Esse dia da semana não existe")
+}
