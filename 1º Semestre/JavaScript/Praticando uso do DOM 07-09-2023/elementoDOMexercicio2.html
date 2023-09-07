@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com o DOM 2</title>
+</head>
+<body>
+    <ul class="listatime">
+        <li>Atletico</li>
+    </ul>
+</body>
+<script>
+    times = ["Real Madrid","Barcelona","Juventus","Atlético-MG"]
+    var listadetimes = document.querySelector('ul.listatime')
+    for(var i = 0; i < times.length; i++){
+        var time = times[i];
+        var listItem = document.createElement("li");
+        listItem.innerText = time;
+        listItem.style.border = '1px solid blue'
+        listadetimes.appendChild(listItem);
+    }
+</script>
+</html>
