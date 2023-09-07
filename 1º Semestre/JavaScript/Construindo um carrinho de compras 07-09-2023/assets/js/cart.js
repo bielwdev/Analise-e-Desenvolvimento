@@ -9,7 +9,8 @@ function adicionarItem(item){
     qtd[item] +=1;
     valorTotal[item] = Number.parseFloat(valorProduto[item]) * qtd[item];
     quantidade.innerHTML = qtd[item];
-    total.innerHTML = valorTotal[item].toFixed(2);
+    total.innerHTML = "R$" + valorTotal[item].toFixed(2);
+    valorCompra();
 }
 
 function removerItem(item){
@@ -19,6 +20,17 @@ function removerItem(item){
         var total = document.getElementById("total" + item)
         quantidade.innerHTML = qtd[item]
         valorTotal[item] = Number.parseFloat(valorProduto[item]) * qtd[item];
-        total.innerHTML = valorTotal[item].toFixed(2);
+        total.innerHTML = "R$" + valorTotal[item].toFixed(2);
+        valorCompra();
     }
+}
+
+function valorCompra(){
+    var valorTotalCompra = document.getElementById("valorTotalCompra");
+    var valor = 0;
+
+    for(var i = 0; i < valorTotal.length; i++){
+        valor += valorTotal[i];
+    }
+    valorTotalCompra.innerHTML = "SUBTOTAL: R$" + valor.toFixed(2);
 }
