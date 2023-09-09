@@ -31,7 +31,7 @@ function adicionarAoCarrinho(nome, imgLink, descricao, preco) {
         "descricao": descricao,
         "preco": Number.parseFloat(preco),
         "quantidade": 0,
-        "total": 0.0
+        "total": 0.0 
     });
 }
 
@@ -75,8 +75,7 @@ function atualizarCarrinho() {
             <div class='pl-md-0 pl-1'>
                 <b>R$ <span id='total${index}'>0</span></b>
             </div>
-
-            <div class='close' onclick='removeProduto(${index})'></div>
+            <div class='close' onclick='removeProduto(${index})'>&times;</div>
         </div>`
 
 
