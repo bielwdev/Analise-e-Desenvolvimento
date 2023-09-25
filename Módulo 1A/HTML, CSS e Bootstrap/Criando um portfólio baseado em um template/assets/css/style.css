@@ -241,7 +241,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpeg") top center;
+  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
 
@@ -471,7 +471,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #03997b;
 }
 
 /*--------------------------------------------------------------
@@ -488,7 +488,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #005f4c;
   position: relative;
 }
 
@@ -504,7 +504,8 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #03997b;
+  color: #fff;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -532,7 +533,74 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #005f4c;
+}
+
+/*--------------------------------------------------------------
+# CERTIFICAÇÕES
+--------------------------------------------------------------*/
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-itemcert {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #005f4c;
+  position: relative;
+}
+
+.resume .resume-itemcert h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-itemcert h5 {
+  font-size: 16px;
+  background: #03997b;
+  color: #fff;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-itemcert ul {
+  padding-left: 20px;
+}
+
+.resume .resume-itemcert ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-itemcert:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-itemcert::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #005f4c;
+}
+
+.resume .resume-itemcert h4:hover{
+  color: #00F0BE;
 }
 
 /*--------------------------------------------------------------
@@ -868,7 +936,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #00F0BE;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -922,7 +990,14 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #01b893;
+  color: #fff;
+}
+
+.contact .info .email i,
+.contact .info .address i,
+.contact .info .phone i {
+  background: #03997b;
   color: #fff;
 }
 
