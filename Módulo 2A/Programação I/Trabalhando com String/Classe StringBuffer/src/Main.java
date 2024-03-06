@@ -17,5 +17,6 @@ public class Main {
 
         System.out.println(nomeCompleto);
         System.out.println(nomeComBuffer);
+        System.out.println("StringBuffer é threads safe");
     }
 }
