@@ -24,6 +24,7 @@ public class Main {
                 System.out.println("Id: " + id + " Nome: " + nome);
             }
             System.out.println("Consulta realizada com sucesso");
+
         }catch(Exception exception){
             exception.printStackTrace();
         }
